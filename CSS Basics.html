@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="mystyle.css">
+      <title>Assignment 4</title>
+      <style>
+        /* body {
+          background-color: linen;
+        } */
+
+        #customers {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        #customers td, #customers th {
+          border: 6px solid #ddd;
+          padding: 8px;
+        }
+
+        #customers tr:nth-child(even){background-color: #b4b3b9;}
+
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: center;
+          background-color: #04AA6D;
+          color: white;
+        } 
+
+        table {
+          width: 100%;
+        }
+
+        th {
+          height: 70px;
+        }
+
+        td {
+          text-align: center;
+        }
+
+        tr:hover {background-color: rgb(100, 239, 109);}
+
+       
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 60px;
+        } 
+
+        ul li:hover a {
+     color: #fff;
+        }
+
+        li a {
+          display: block;
+          background-color: #e497f2;
+        }
+
+        input[type=submit] {
+            width: 20%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+              background-color: #80ca75;
+        }
+        
+        div.gallery {
+          margin: 10px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 100px;
+        }
+
+        div.gallery:hover {
+          border: 50px solid #777;
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+      
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+      </style>
+    </head>
+    <body>
+
+        <h1 style="color:paleturquoise;text-align:center;font-size: 50px;font-family:"Times New Roman", Times, serif;">This is my heading</h1>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul><br>
+
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="class level">Class Level</label>
+              <select id="class level" name="class level">
+                <option value="Freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div><br>
+
+        <table id="customers">
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+        </table>
+
+        <div class="gallery">
+            <a target="_blank" href="cloud.jpg">
+              <img src="cloud.jpg" alt="cloud" width="400" height="400">
+            </a><br>
+            <div class="desc">Click here for Clouds!</div>
+          </div>
+    </body>
+</html>
